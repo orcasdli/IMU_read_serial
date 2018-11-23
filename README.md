@@ -27,6 +27,7 @@ The files should be in a directory named as "imu_read".
 for example
 
 `cd ~/catkin_ws`
+
 `catkin_make`
 
 then
