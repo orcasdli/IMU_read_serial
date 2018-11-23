@@ -6,7 +6,7 @@ I bought it from Taobao (yeah, made in China). The device is called JY901. The o
 
 
 # How to use
-Actually you should have known these after some basic ROS learning.
+Actually you should have known these after some basic ROS learning. Make sure you can access the com port. Make sure you know the right com name such as "ttyUSB0"
 
 1. Make your own ROS workspace. Install the ROS serial package by 
 `sudo apt-get install ros-<distro>-serial`
