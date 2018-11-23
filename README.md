@@ -2,7 +2,7 @@
 Read IMU info from IMU device (customed, for example cheap IMU using MPU6050 or MPU9250)through a serial com. Currently using the serial package in ROS.
 
 I am using a cheap customed IMU with MPU9250 inside. It send IMU info through a serial com.
-I bought it from Taobao (yeah, made in China). The device is called JY901. The orginal exmaples do not contain a Linux example. This project can be used to similar devices.
+I bought it from Taobao (yeah, made in China). The device is called JY901. The orginal examples do not contain a Linux example. This project can be used to similar devices.
 
 
 # How to use
