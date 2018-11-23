@@ -25,9 +25,9 @@ The files should be in a directory named as "imu_read".
 3. Some traditional work in ROS.
 
 for example
-`cd ~/catkin_ws
+``cd ~/catkin_ws
 catkin_make
-`
+``
 then
 switch to the launch directory and 
 `roslaunch imu_read.launch`
