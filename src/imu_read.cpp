@@ -19,13 +19,6 @@ double Linear_acc[3] = {0, 0, 0};
 double RPY_angle[3] = {0, 0, 0};
 double Omega[3] = {0, 0, 0};
 
-bool set_zero_orientation(std_srvs::Empty::Request &,
-                          std_srvs::Empty::Response &) {
-  ROS_INFO("Zero Orientation Set.");
-  zero_orientation_set = false;
-  return true;
-}
-
 
 sensor_msgs::Imu imu;
 tf::Quaternion imu_quaternion;
@@ -131,7 +124,7 @@ imu.orientation.z = imu_quaternion.getZ();
                   imu.orientation_covariance[7] = 0;
                   imu.orientation_covariance[8] = 0;
 
-                  // angular velocity is not provided
+       
                   imu.angular_velocity_covariance[0] = 0;
                   imu.angular_velocity_covariance[1] = 0;
                   imu.angular_velocity_covariance[2] = 0;
@@ -141,7 +134,7 @@ imu.orientation.z = imu_quaternion.getZ();
                   imu.angular_velocity_covariance[6] = 0;
                   imu.angular_velocity_covariance[7] = 0;
                   imu.angular_velocity_covariance[8] = 0;
-                  // linear acceleration is not provided
+   
                   imu.linear_acceleration_covariance[0] = 0;
                   imu.linear_acceleration_covariance[1] = 0;
                   imu.linear_acceleration_covariance[2] = 0;
@@ -162,7 +155,7 @@ imu.orientation.z = imu_quaternion.getZ();
         try {
           ser.setPort(port);
           ser.setBaudrate(115200);
-                    // ser.setBaudrate(9600);
+          // ser.setBaudrate(9600);
           serial::Timeout to = serial::Timeout::simpleTimeout(1000);
           ser.setTimeout(to);
           ser.open();
