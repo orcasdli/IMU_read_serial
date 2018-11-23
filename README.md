@@ -7,8 +7,9 @@ I bought it from Taobao (yeah, made in China). The device is called JY901. The o
 
 
 
-Similar project:
+## Similar project:
 https://github.com/kintzhao/imu_serial_node
+
 and my fork:
 https://github.com/orcasdli/imu_serial_node
 
