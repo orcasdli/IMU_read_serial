@@ -10,28 +10,28 @@ Actually you should have known these after some basic ROS learning.
 
 1. Make your own ROS workspace. Install the ROS serial package by 
 ```sudo apt-get install ros-<distro>-serial
-````
+```
 for example
 ```sudo apt-get install ros-kinetic-serial
-````
+```
 
 2. Switch to the src file,
 for example
 ```cd ~/catkin_ws/src
-````
+```
 git clone this into it:
 ```git clone https://github.com/orcasdli/IMU_read_serial.git
-````
+```
 The files should be in a directory named as "imu_read".
 3. Some traditional work in ROS.
 for example
 ```cd ~/catkin_ws
 catkin_make
-````
+```
 then
 switch to the launch directory and 
 ```roslaunch imu_read.launch
-````
+```
 
 ## Similar project:
 https://github.com/kintzhao/imu_serial_node
