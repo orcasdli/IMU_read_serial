@@ -11,7 +11,6 @@
 #include <imu_read/JY901.h>
 
 const double pi = 3.1415926536;
-bool zero_orientation_set = false;
 
 int counter = 0;
 
@@ -37,9 +36,7 @@ int main(int argc, char **argv) {
 
   ros::NodeHandle private_node_handle("~");
   private_node_handle.param<std::string>("port", port, "/dev/ttyUSB0");
-  private_node_handle.param<std::string>("tf_parent_frame_id",
-                                         tf_parent_frame_id, "imu_base");
-  private_node_handle.param<std::string>("tf_frame_id", tf_frame_id, "imu");
+
   private_node_handle.param<std::string>("imu_frame_id", imu_frame_id,
                                          "imu_base");
   private_node_handle.param<double>("time_offset_in_seconds",
@@ -47,8 +44,7 @@ int main(int argc, char **argv) {
 
   ros::NodeHandle nh;
   ros::Publisher imu_pub = nh.advertise<sensor_msgs::Imu>("imu", 100);
-  ros::ServiceServer service =
-      nh.advertiseService("set_zero_orientation", set_zero_orientation);
+
 
   ros::Rate r(40); // 1000 hz
 
