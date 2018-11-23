@@ -13,7 +13,8 @@ https://github.com/kintzhao/imu_serial_node
 and my fork:
 https://github.com/orcasdli/imu_serial_node
 
-Personal thoughts:
+### Personal thoughts:
+
 I find it difficult to use serial smoothly in Linux because we lack some mature libs, such as pccomm in Windows.
 Therefore, this project currently forcefully reads packages from the buffer pool. If the buffer size and freqency do not match, it will not work well. Current it works by my blind guess (I feel kinda sad of my limited brain size).
 
