@@ -21,7 +21,7 @@ for example
 git clone this into it:
 `git clone https://github.com/orcasdli/IMU_read_serial.git`
 
-The files should be in a directory named as "imu_read".
+These files should be in a directory named as "imu_read". I cannot change name of this git clone anymore. So please change it manually.
 
 3. Some traditional work in ROS.
 
