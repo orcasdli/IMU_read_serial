@@ -25,7 +25,10 @@ The files should be in a directory named as "imu_read".
 3. Some traditional work in ROS.
 
 for example
+
+
 ``cd ~/catkin_ws
+
 catkin_make
 ``
 then
