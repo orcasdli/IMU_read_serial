@@ -1,12 +1,12 @@
 # IMU_read_serial
-Read IMU info from IMU device (customed, for example cheap IMU using MPU6050 or MPU9250)through a serial com. Currently using the serial package in ROS.
+Read IMU info from IMU device (customed, for example cheap IMU using MPU6050 or MPU9250)through a serial com port. Currently using the serial package in ROS.
 
 I am using a cheap customed IMU with MPU9250 inside. It send IMU info through a serial com.
 I bought it from Taobao (yeah, made in China). The device is called JY901. The orginal examples do not contain a Linux example. This project can be used to similar devices.
 
 
 # How to use
-Actually you should have known these after some basic ROS learning. Make sure you can access the com port. Make sure you know the right com name such as "ttyUSB0"
+Actually you should have known these after some basic ROS learning. Make sure you can access the com port. Make sure you know the right com port name such as "ttyUSB0"
 
 1. Make your own ROS workspace. Install the ROS serial package by 
 `sudo apt-get install ros-<distro>-serial`
